@@ -1,3 +1,8 @@
 <h1>You searched for <%= params[:q] %></h1>
 <pre>
   <%= @results.inspect %>
+  <ul>
+    <% @results['results'].each do |r| %>
+      <li><%= r['text'] %></li>
+      <% end %>
+</ul>
