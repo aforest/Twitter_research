@@ -3,6 +3,7 @@ class SearchesController < ApplicationController
   end
   def show
    search =  SimpleTwitter::Search.new
-   @results =  search.search(params[:q])
+   #searcher.per_page = params[:results_per_page]
+    @results =  search.search(params[:q])
   end
 end
