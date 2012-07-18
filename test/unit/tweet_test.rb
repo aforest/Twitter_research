@@ -8,8 +8,11 @@ class TweetTest < ActiveSupport::TestCase
 end
     test("suggested categories works correctly") do
   tweet = Tweet.new do |t|
-    t.tweet_text = "I wish I could get my business of the ground #money"
+    t.tweeted_text = "I wish I could get my business of the ground #money"
     end
-    assert-equal("Business,Money", tweet.suggested_categories)
+    assert_equal("Business,Money", tweet.suggested_categories)
     end
   end
+
+
+
