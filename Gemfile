@@ -5,7 +5,7 @@ gem  'simple_twitter',
 :git => 'https://github.com/aforest/simple_twitter.git',
 :tag => 'v1.0.0'
 gem('pg')
-
+gem 'devise'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
