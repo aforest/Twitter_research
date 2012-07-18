@@ -9,6 +9,14 @@ class Tweet < ActiveRecord::Base
   has_and_belongs_to_many(:categories)
 
   def suggested_categories
-
+    #String#Split
+    #String#downcase
+    #Array#join
+     #titles = Category.all.map(&:title).map(&:downcase)
+   #titles.include?(word)
+   text = tweeted_text.gsub(/#/,'')
+    word = dc.split
+    titles = Category.all.map(&:title).map(&:downcase)
+    titles.include?(word)
   end
 end
