@@ -7,8 +7,11 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
-  attr_accessible(:full_name,:email)
+  attr_accessible(:full_name, :email)
+
   validates(:full_name, :presence => true)
-  validates(:email,     :presence => true,:uniqueness => true)
+  validates(:email,     :presence => true, :uniqueness=> true)
+
   has_many(:tweets)
 end
+
