@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create! do |user|
-  user.full_name             = 'Steve Campbell'
-  user.email                 = 'toohip@q.com'
-  user.password              = 'anneke'
-  user.password_confirmation = 'anneke'
+  user.full_name             = 'Austin Forest'
+  user.email                 = 'nickodiangelo@gmail.com'
+  user.password              = '484688'
+  user.password_confirmation = '484688'
 end
 
 Category.create!(title: 'Business')
