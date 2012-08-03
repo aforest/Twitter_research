@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:aforest/twitter_research-1.git
-  revision: 3f42a2c78d471b16515dbbb5c339247cd50bbed3
+  remote: https://github.com/aforest/simple_twitter.git
+  revision: 5bd0f668c1c05888fd4fbf798108cf33ac257048
   tag: v1.0.0
   specs:
     simple_twitter (1.0.0)
