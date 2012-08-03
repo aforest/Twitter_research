@@ -9,8 +9,8 @@
 User.create! do |user|
   user.full_name             = 'Austin Forest'
   user.email                 = 'nickodiangelo@gmail.com'
-  user.password              = '484688'
-  user.password_confirmation = '484688'
+  user.password              = 'aforest4688'
+  user.password_confirmation = 'aforest4688'
 end
 
 Category.create!(title: 'Business')
